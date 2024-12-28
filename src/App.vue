@@ -1,5 +1,7 @@
 <script setup lang="ts">
-import { RouterView } from "vue-router";
+import { useBeforeMountApp } from "./hooks";
+
+useBeforeMountApp();
 </script>
 
 <template>

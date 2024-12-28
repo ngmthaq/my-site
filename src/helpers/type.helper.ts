@@ -135,7 +135,7 @@ export class TypeHelper {
   }
 
   static generateRandomArray(length = 8) {
-    return Array.from({ length }, () => Math.random());
+    return Array.from({ length }, (_, index) => index);
   }
 
   static generateRandomObject(length = 8) {

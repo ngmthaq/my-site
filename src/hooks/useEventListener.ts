@@ -11,9 +11,9 @@ export function useEventListener(
   const savedHandler = ref(handler);
 
   // eslint-disable-next-line @typescript-eslint/no-explicit-any
-  const eventListener = (event: any) => {
+  function eventListener(event: any) {
     if (savedHandler.value) savedHandler.value(event);
-  };
+  }
 
   onMounted(() => {
     element.addEventListener(eventType, eventListener);

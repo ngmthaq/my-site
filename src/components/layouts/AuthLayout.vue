@@ -1,7 +1,7 @@
 <script setup lang="ts"></script>
 
 <template>
-  <slot />
+  <RouterView />
 </template>
 
 <style scoped lang="scss"></style>

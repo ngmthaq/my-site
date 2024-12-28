@@ -8,8 +8,11 @@ export {}
 declare module 'vue' {
   export interface GlobalComponents {
     AppLoading: typeof import('./../components/generics/AppLoading.vue')['default']
-    BaseLayout: typeof import('./../components/layouts/BaseLayout.vue')['default']
+    AuthLayout: typeof import('./../components/layouts/AuthLayout.vue')['default']
+    GuestLayout: typeof import('./../components/layouts/GuestLayout.vue')['default']
     InputOtp: typeof import('primevue/inputotp')['default']
+    InputText: typeof import('primevue/inputtext')['default']
+    PublicLayout: typeof import('./../components/layouts/PublicLayout.vue')['default']
     RouterLink: typeof import('vue-router')['RouterLink']
     RouterView: typeof import('vue-router')['RouterView']
   }

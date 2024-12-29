@@ -3,6 +3,7 @@ import { useYupForm } from "@/hooks";
 import { OTP_FORM_SCHEMA } from "@/models";
 
 const { defineField, errors } = useYupForm(OTP_FORM_SCHEMA);
+
 const [otp, otpAttrs] = defineField("otp");
 </script>
 

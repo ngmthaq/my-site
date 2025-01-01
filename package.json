@@ -10,10 +10,12 @@
     "build-only": "vite build",
     "type-check": "vue-tsc --build",
     "lint": "eslint . --fix",
-    "format": "prettier --write ."
+    "format": "prettier --write .",
+    "env:touch": "node ./.scripts/node/create-env-file.cjs"
   },
   "dependencies": {
     "@primevue/themes": "^4.2.5",
+    "@supabase/supabase-js": "^2.47.10",
     "@vee-validate/yup": "^4.15.0",
     "axios": "^1.7.9",
     "dayjs": "^1.11.13",

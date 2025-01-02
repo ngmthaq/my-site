@@ -5,17 +5,18 @@
   "type": "module",
   "scripts": {
     "dev": "vite --host",
-    "build": "run-p type-check \"build-only {@}\" --",
+    "build": "run-p lint type-check \"build-only {@}\" --",
     "preview": "vite preview --host",
     "build-only": "vite build",
     "type-check": "vue-tsc --build",
-    "lint": "eslint . --fix",
+    "lint": "prettier --check . && eslint .",
     "format": "prettier --write .",
     "env:touch": "node ./.scripts/node/create-env-file.cjs"
   },
   "dependencies": {
     "@primevue/themes": "^4.2.5",
     "@supabase/supabase-js": "^2.47.10",
+    "@tanstack/vue-query": "^5.62.9",
     "@vee-validate/yup": "^4.15.0",
     "axios": "^1.7.9",
     "dayjs": "^1.11.13",
@@ -31,6 +32,7 @@
   },
   "devDependencies": {
     "@primevue/auto-import-resolver": "^4.2.5",
+    "@tanstack/vue-query-devtools": "^5.62.9",
     "@tsconfig/node22": "^22.0.0",
     "@types/axios": "^0.14.4",
     "@types/node": "^22.10.2",

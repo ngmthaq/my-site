@@ -11,7 +11,6 @@ declare module 'vue' {
     AuthLayout: typeof import('./../components/layouts/AuthLayout.vue')['default']
     GuestLayout: typeof import('./../components/layouts/GuestLayout.vue')['default']
     InputOtp: typeof import('primevue/inputotp')['default']
-    InputText: typeof import('primevue/inputtext')['default']
     PublicLayout: typeof import('./../components/layouts/PublicLayout.vue')['default']
     RouterLink: typeof import('vue-router')['RouterLink']
     RouterView: typeof import('vue-router')['RouterView']

@@ -1,4 +1,5 @@
 <script setup lang="ts">
+import { VueQueryDevtools } from "@tanstack/vue-query-devtools";
 import { useBeforeMountApp } from "./hooks";
 
 useBeforeMountApp();
@@ -6,6 +7,7 @@ useBeforeMountApp();
 
 <template>
   <RouterView />
+  <VueQueryDevtools />
 </template>
 
 <style scoped lang="scss"></style>

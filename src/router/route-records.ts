@@ -4,12 +4,12 @@ import { routeNames } from "./route-names";
 export const routeRecords: RouteRecordRaw[] = [
   {
     path: "/",
-    name: routeNames.home,
-    component: () => import("../views/HomeView.vue"),
+    name: routeNames.root.home,
+    component: () => import("../views/root/HomeView.vue"),
   },
   {
     path: "/about",
-    name: routeNames.about,
-    component: () => import("../views/AboutView.vue"),
+    name: routeNames.root.about,
+    component: () => import("../views/root/AboutView.vue"),
   },
 ];

@@ -1,4 +1,7 @@
 export const routeNames = {
-  home: "home",
-  about: "about",
+  dashboard: {},
+  root: {
+    home: "home",
+    about: "about",
+  },
 };

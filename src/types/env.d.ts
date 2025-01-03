@@ -20,6 +20,11 @@ interface ImportMetaEnv {
    * VITE_SUPABASE_KEY=example-supabase-key
    */
   readonly VITE_SUPABASE_KEY: string;
+
+  /**
+   * VITE_GITHUB_TOKEN=example-github-token
+   */
+  readonly VITE_GITHUB_TOKEN: string;
 }
 
 interface ImportMeta {

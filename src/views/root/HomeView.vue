@@ -1,4 +1,5 @@
 <script setup lang="ts">
+import { InputText } from "primevue";
 import { useYupForm } from "@/hooks";
 import { OTP_FORM_SCHEMA } from "@/models";
 
@@ -8,7 +9,7 @@ const [otp, otpAttrs] = defineField("otp");
 </script>
 
 <template>
-  <InputOtp v-model="otp" v-bind="otpAttrs" :invalid="Boolean(errors.otp)" />
+  <InputText v-model="otp" v-bind="otpAttrs" :invalid="Boolean(errors.otp)" />
 </template>
 
 <style scoped lang="scss"></style>
